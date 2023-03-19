@@ -10,34 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66873ecd-19e4-47a9-ab26-c9309f311487" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/controllers/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/controllers/TaskInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spy.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/tasks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resources/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/style/my.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/script/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/script/my.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/MySpringDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/MySpringDispatcherServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/SpringConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/domain/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/domain/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/domain/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/domain/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/Tester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/controllers/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/repositories/TaskDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/repositories/TaskDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/repositories/UniversalDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/img/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resources/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/style/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/style/my.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Education/project Spring1/src/main/webapp/WEB-INF/views",
+    "last_opened_file_path": "D:/Education/mini_project_of_spring1_v2/src/main/webapp/WEB-INF/views/script",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,6 +101,8 @@
       <recent name="ru.javarush.delta.zazimko.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Education\mini_project_of_spring1_v2\src\main\webapp\WEB-INF\views\script" />
+      <recent name="D:\Education\mini_project_of_spring1_v2\src\main\webapp\WEB-INF\views\html" />
       <recent name="D:\Education\project Spring1\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Education\project Spring1\src\main\resources" />
     </key>
@@ -233,6 +224,8 @@
       <workItem from="1678362422507" duration="7818000" />
       <workItem from="1678641794516" duration="9412000" />
       <workItem from="1678725085281" duration="20392000" />
+      <workItem from="1678863792592" duration="24120000" />
+      <workItem from="1679218522960" duration="3984000" />
     </task>
     <servers />
   </component>
@@ -246,11 +239,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/config/AppConfig.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/repositories/TaskDAO.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/service/TaskService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/javarush/delta/zazimko/service/TaskService.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mini_project_of_spring1_v2$tomcat_10_0_23.ic" NAME="tomcat-10.0.23 Coverage Results" MODIFIED="1679219307139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

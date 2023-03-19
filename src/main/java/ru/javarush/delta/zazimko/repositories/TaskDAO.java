@@ -11,54 +11,46 @@ import ru.javarush.delta.zazimko.domain.Task;
 import java.util.List;
 
 @Repository
-public class TaskDAO{
+public class TaskDAO {
     private final SessionFactory sessionFactory;
 
     public TaskDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
-    public Session getCurrentSession() {
-        return sessionFactory.openSession();
-    }
-
-
-    @Transactional(propagation = Propagation.REQUIRED)
-    public void save(Task t) {
-        try (Session session = getCurrentSession()) {
-            session.persist(t);
-        }
-
-    }
-    @Transactional(propagation = Propagation.REQUIRED)
-    public Task getById(int id){
-        Query<Task> query = getCurrentSession().createQuery("select t from Task t where t.id=:ID", Task.class);
-        query.setParameter("ID",id);
-            return query.uniqueResult();
-
-    }
-    @Transactional(readOnly = false,propagation = Propagation.REQUIRED)
-    public List<Task> getAll(int offset,int limit){
-        Query<Task> query = getCurrentSession().createQuery("select t from Task t", Task.class);
+    @Transactional(readOnly = true, propagation = Propagation.REQUIRED)
+    public List<Task> getAll(int offset, int limit) {
+        Query<Task> query = getSession().createQuery("select t from Task t", Task.class);
         query.setFirstResult(offset);
         query.setMaxResults(limit);
         return query.getResultList();
     }
-    @Transactional(readOnly = false,propagation = Propagation.REQUIRED)
-    public int getAllCount(){
-        Query<Long> query = getCurrentSession().createQuery("select count(t) from Task t", Long.class);
+
+    @Transactional(readOnly = true, propagation = Propagation.REQUIRED)
+    public int getAllCount() {
+        Query<Long> query = getSession().createQuery("select count(t) from Task t", Long.class);
         return Math.toIntExact(query.uniqueResult());
     }
 
     @Transactional(propagation = Propagation.REQUIRED)
-    public Task update(Task t){
-        try(Session session = getCurrentSession()){
-            session.merge(t);
-        }
-        return t;
+    public Task getById(int id) {
+        Query<Task> query = getSession().createQuery("select t from Task t where t.id =  :ID", Task.class);
+        query.setParameter("ID", id);
+        return query.uniqueResult();
     }
+
     @Transactional(propagation = Propagation.REQUIRED)
-    public void remove(Task t){
-        getCurrentSession().remove(t);
+    public void saveOrUpdate(Task task) {
+        getSession().persist(task);
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void delete(Task task) {
+        getSession().remove(task);
+    }
+
+    private Session getSession() {
+        return sessionFactory.getCurrentSession();
     }
 }
+

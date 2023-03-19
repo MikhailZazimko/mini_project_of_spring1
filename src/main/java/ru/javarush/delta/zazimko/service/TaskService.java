@@ -1,5 +1,6 @@
 package ru.javarush.delta.zazimko.service;
 
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.javarush.delta.zazimko.domain.Status;
@@ -8,45 +9,54 @@ import ru.javarush.delta.zazimko.repositories.TaskDAO;
 
 import java.util.List;
 
-
 import static java.util.Objects.isNull;
 
 @Service
 public class TaskService {
-
-    private  final TaskDAO taskDAO;
+    private final TaskDAO taskDAO;
 
     public TaskService(TaskDAO taskDAO) {
         this.taskDAO = taskDAO;
     }
+
     public List<Task> getAll(int offset, int limit){
-        return taskDAO.getAll(offset,limit);
+        return taskDAO.getAll(offset, limit);
     }
+
     public int getAllCount(){
         return taskDAO.getAllCount();
     }
+
     @Transactional
-    public Task update(int id, String description, Status status){
-        Task daoById = taskDAO.getById(id);
-        if(isNull(daoById)){
+    public Task edit(int id, String description, Status status){
+        Task task = taskDAO.getById(id);
+        if (isNull(task)){
             throw new RuntimeException("Not found");
         }
-        taskDAO.update(daoById);
-        return daoById;
+
+        task.setDescription(description);
+        task.setStatus(status);
+        taskDAO.saveOrUpdate(task);
+        return task;
     }
+
     public Task create(String description, Status status){
         Task task = new Task();
         task.setDescription(description);
         task.setStatus(status);
-        taskDAO.save(task);
+        taskDAO.saveOrUpdate(task);
         return task;
     }
+
     @Transactional
     public void delete(int id){
-        Task daoById = taskDAO.getById(id);
-        if(isNull(daoById)) {
+        Task task = taskDAO.getById(id);
+        if (isNull(task)){
             throw new RuntimeException("Not found");
         }
-        taskDAO.remove(daoById);
+
+        taskDAO.delete(task);
     }
+
+
 }

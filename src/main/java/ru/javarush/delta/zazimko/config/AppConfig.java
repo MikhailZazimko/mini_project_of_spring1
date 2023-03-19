@@ -40,7 +40,7 @@ public class AppConfig {
         dataSource.setJdbcUrl("jdbc:p6spy:mysql://192.168.99.100:3306/todo");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
-        dataSource.setMaximumPoolSize(10);
+        dataSource.setMaximumPoolSize(50);
         return dataSource;
     }
     @Bean
